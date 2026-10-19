@@ -1,0 +1,227 @@
+{
+  "version": 7,
+  "gold": 12500,
+  "bestTimes": {
+    "normal": 600,
+    "nightmare": 0,
+    "hell": 0
+  },
+  "continuedBest": {
+    "nightmare": 840
+  },
+  "unlocked": {
+    "barbarian": "nightmare",
+    "sorceress": "normal"
+  },
+  "baalSlain": {
+    "barbarian": "normal"
+  },
+  "inventoryByClass": {
+    "barbarian": [
+      {
+        "id": "ex-ring",
+        "base": "Ring",
+        "type": "ring",
+        "rarity": "magic",
+        "name": "Ring of the Ember",
+        "level": 18,
+        "mods": [
+          { "stat": "fireResist", "value": 12 },
+          { "stat": "life", "value": 8 }
+        ]
+      }
+    ],
+    "sorceress": []
+  },
+  "equippedByClass": {
+    "barbarian": {
+      "weapon": {
+        "id": "ex-axe",
+        "base": "Battle Axe",
+        "type": "weapon",
+        "rarity": "unique",
+        "name": "Grave Howl",
+        "level": 40,
+        "stats": [{ "stat": "item_numsockets", "value": 2 }],
+        "mods": [
+          { "stat": "attackDamage", "value": 24, "implicit": true },
+          { "stat": "enhancedDamage", "value": 120 },
+          { "stat": "attackSpeed", "value": 20 },
+          { "stat": "charge:corpseExplosion:14", "value": 30 },
+          { "stat": "proc:hit:boneSpear:16", "value": 50 },
+          { "stat": "mysteryTwist", "value": 7 }
+        ]
+      },
+      "head": {
+        "id": "ex-helm",
+        "base": "Horned Helm",
+        "type": "head",
+        "rarity": "rare",
+        "name": "Warhowl Visage",
+        "level": 35,
+        "mods": [
+          { "stat": "damageReduction", "value": 6, "implicit": true },
+          { "stat": "skilltab14", "value": 2 },
+          { "stat": "life", "value": 25 }
+        ]
+      },
+      "amulet": {
+        "id": "ex-amulet",
+        "base": "Amulet",
+        "type": "amulet",
+        "rarity": "unique",
+        "name": "Cinder Locket",
+        "level": 28,
+        "mods": [
+          { "stat": "fireResist", "value": 20 },
+          { "stat": "magicFind", "value": 18 },
+          { "stat": "damageReduction", "value": 0.25 }
+        ]
+      },
+      "body": {
+        "id": "ex-armor",
+        "base": "Ring Mail",
+        "type": "body",
+        "rarity": "rare",
+        "name": "Ashen Hauberk",
+        "level": 30,
+        "defense": 48,
+        "mods": [
+          { "stat": "damageReduction", "value": 5, "implicit": true },
+          { "stat": "enhancedDefense", "value": 40 },
+          { "stat": "strength", "value": 8 }
+        ]
+      },
+      "gloves": {
+        "id": "ex-gloves",
+        "base": "Leather Gloves",
+        "type": "gloves",
+        "rarity": "magic",
+        "name": "Leather Gloves of the Fox",
+        "level": 16,
+        "mods": [
+          { "stat": "damageReduction", "value": 2, "implicit": true },
+          { "stat": "attackSpeed", "value": 10 }
+        ]
+      },
+      "ring1": {
+        "id": "ex-ring1",
+        "base": "Ring",
+        "type": "ring",
+        "rarity": "rare",
+        "name": "Ember Band",
+        "level": 22,
+        "mods": [
+          { "stat": "life", "value": 15 },
+          { "stat": "fireResist", "value": 8 }
+        ]
+      },
+      "ring2": null,
+      "belt": {
+        "id": "ex-belt",
+        "base": "Heavy Belt",
+        "type": "belt",
+        "rarity": "unique",
+        "name": "Oak Clasp",
+        "level": 24,
+        "defense": 12,
+        "mods": [
+          { "stat": "damageReduction", "value": 2, "implicit": true },
+          { "stat": "damageReduced", "value": 3 },
+          { "stat": "thorns", "value": 5 },
+          { "stat": "lifePerLevel", "value": 12 }
+        ]
+      },
+      "boots": {
+        "id": "ex-boots",
+        "base": "Boots",
+        "type": "boots",
+        "rarity": "normal",
+        "name": "Boots",
+        "level": 4,
+        "mods": [
+          { "stat": "damageReduction", "value": 1, "implicit": true }
+        ]
+      }
+    },
+    "sorceress": {
+      "weapon": {
+        "id": "ex-staff",
+        "base": "Short Staff",
+        "type": "weapon",
+        "rarity": "magic",
+        "name": "Burning Short Staff",
+        "level": 12,
+        "mods": [
+          { "stat": "damage", "value": 8, "implicit": true },
+          { "stat": "skill:fireBall", "value": 2 },
+          { "stat": "classskills1", "value": 1 },
+          { "stat": "fireMinDamage", "value": 3 },
+          { "stat": "fireMaxDamage", "value": 6 },
+          { "stat": "poisonMinDamage", "value": 8, "length": 75, "auto": true },
+          { "stat": "poisonMaxDamage", "value": 24, "auto": true }
+        ]
+      },
+      "head": {
+        "id": "ex-cap",
+        "base": "Cap",
+        "type": "head",
+        "rarity": "normal",
+        "name": "Cap",
+        "level": 2,
+        "mods": [
+          { "stat": "damageReduction", "value": 2, "implicit": true }
+        ]
+      }
+    }
+  },
+  "stashTabs": {
+    "shared1": [
+      {
+        "id": "ex-stash-1",
+        "base": "Quilted Armor",
+        "type": "body",
+        "rarity": "magic",
+        "name": "Quilted Armor of the Whale",
+        "level": 14,
+        "at": { "x": 0, "y": 0 },
+        "mods": [
+          { "stat": "damageReduction", "value": 4, "implicit": true },
+          { "stat": "life", "value": 20 }
+        ]
+      }
+    ],
+    "shared2": [],
+    "shared3": [
+      {
+        "id": "ex-stash-3",
+        "base": "Long Bow",
+        "type": "weapon",
+        "rarity": "rare",
+        "name": "Hawk Flight",
+        "level": 20,
+        "at": { "x": 2, "y": 1 },
+        "mods": [
+          { "stat": "attackDamage", "value": 11, "implicit": true },
+          { "stat": "enhancedDamage", "value": 45 },
+          { "stat": "proc:struck:poisonNova:5", "value": 5 }
+        ]
+      }
+    ],
+    "barbarian": [
+      {
+        "id": "ex-bar-stash",
+        "base": "Chain Gloves",
+        "type": "gloves",
+        "rarity": "magic",
+        "name": "Chain Gloves of the Apprentice",
+        "level": 11,
+        "mods": [
+          { "stat": "damageReduction", "value": 2, "implicit": true },
+          { "stat": "attackRatingPoints", "value": 12 }
+        ]
+      }
+    ],
+    "sorceress": []
+  }
+}
