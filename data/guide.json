@@ -5,7 +5,7 @@
     "date": "2026-10-18"
   },
   "changelogUrl": "https://d2survivors.lol/changelog.json",
-  "intro": "Rules for the seven playable classes, taken from the developer changelog. No D2 Survivors build guides are published yet, so this page does not recommend builds. The game changes often.",
+  "intro": "Rules for the seven playable classes. Changelog lines are quoted in the rules below. Evolution chains, synergies, passives, scaling, and item-mod notes are a separate section read from the public game client and are not tested in play. No D2 Survivors build guides are published yet, so this page does not recommend builds. The game changes often.",
   "classesNote": "The game site describes all seven heroes. They are Amazon, Sorceress, Necromancer, Paladin, Barbarian, Druid and Assassin. Warlock is not in the game.",
   "siteUrl": "https://d2survivors.lol/",
   "general": [
@@ -149,7 +149,45 @@
             }
           ]
         }
-      ]
+      ],
+      "fromGame": {
+        "chains": [
+          "Cold Arrow + Dodge → Ice Arrow at 18, then Ice Arrow + Slow Missiles → Freezing Arrow at 30.",
+          "Power Strike + Inner Sight → Charged Strike at 18, then Charged Strike + Penetrate → Lightning Strike at 30.",
+          "Poison Javelin + Avoid → Plague Javelin at 18.",
+          "Exploding Arrow + Decoy → Immolation Arrow at 24.",
+          "Multiple Shot + Critical Strike → Strafe at 24.",
+          "Jab + Evade → Fend at 24.",
+          "Guided Arrow + Pierce → Widowmaker at 30.",
+          "Lightning Bolt + Penetrate → Lightning Fury at 30."
+        ],
+        "synergies": [
+          "Fire Arrow and Exploding Arrow each list 12 from the other, about 6% per level. Immolation Arrow lists 10 from Exploding Arrow (about 5%) and 5 from Fire Arrow (about 3%).",
+          "Cold Arrow lists 12 from Ice Arrow (about 6%). Ice Arrow lists 8 from Cold Arrow (about 4%). Freezing Arrow lists 12 from Cold Arrow (about 6%).",
+          "In the lightning javelins, Power Strike and Charged Strike list 10 from the others (about 5%). Lightning Strike lists 8 (about 4%), Lightning Bolt lists 3 (about 2%), and Lightning Fury lists 1 (about 1%).",
+          "Poison Javelin lists 12 from Plague Javelin (about 6%). Plague Javelin lists 10 from Poison Javelin (about 5%)."
+        ],
+        "passives": [
+          "Critical Strike — +6% chance per level that her attacks, and the Valkyrie's, deal double damage.",
+          "Penetrate — attacks deal 8% more damage per level.",
+          "Pierce — +12% chance per level that arrows and javelins pass through a target.",
+          "Dodge — +6% chance per level to sidestep a melee blow while standing still.",
+          "Avoid — +7% chance per level to sidestep a missile while standing still.",
+          "Evade — +5% chance per level to sidestep while moving.",
+          "Inner Sight — nearby monsters take 8% more damage per level. It breaks no immunity.",
+          "Slow Missiles — monster missiles fly 10% slower per level.",
+          "Decoy — a double appears nearby and draws monsters."
+        ],
+        "scaling": "Calculated, approximate. From level 1 to 8, before synergies, passives, and gear: Cold Arrow about 39×, Fire Arrow about 38×, Magic Arrow about 27×.",
+        "tips": [
+          "Cold Arrow, Fire Arrow, and Magic Arrow are the steepest bow growth in her kit. Magic Arrow is available at required level 1.",
+          "Fire Arrow and Exploding Arrow feed each other. Exploding Arrow plus Decoy becomes Immolation Arrow at 24, and that arrow keeps both synergies.",
+          "Cold path: Cold Arrow plus Dodge becomes Ice Arrow at 18, then Slow Missiles makes Freezing Arrow at 30.",
+          "Penetrate catalyzes both Lightning Bolt → Lightning Fury and Charged Strike → Lightning Strike, so one passive slot covers two evolutions.",
+          "Jab, Power Strike, Impale, and Valkyrie grow only about 4–7×, so they stay secondary to the bow skills.",
+          "Penetrate, Inner Sight, and Critical Strike raise damage for most attacks. Critical Strike is also the catalyst for Multiple Shot → Strafe."
+        ]
+      }
     },
     {
       "id": "sorceress",
@@ -191,7 +229,41 @@
             }
           ]
         }
-      ]
+      ],
+      "fromGame": {
+        "chains": [
+          "Fire Bolt + Warmth → Fire Ball at 12, then Fire Ball + Enchant → Meteor at 24.",
+          "Frozen Armor + Vitality → Shiver Armor at 12, then Shiver Armor + Cold Mastery → Chilling Armor at 30.",
+          "Ice Blast + Faster Cast Rate → Glacial Spike at 18, then Glacial Spike + Replenish Life → Blizzard at 24.",
+          "Blaze + Faster Run/Walk → Fire Wall (required level 18, earliest character level 19).",
+          "Charged Bolt + Energy Shield → Chain Lightning at 24.",
+          "Ice Bolt + Cold Mastery → Frozen Orb at 30.",
+          "Nova + Lightning Mastery → Thunder Storm at 30."
+        ],
+        "synergies": [
+          "Ice Bolt lists 15 from each of Frost Nova, Ice Blast, Glacial Spike, Blizzard, and Frozen Orb, about 8% per level.",
+          "Fire Bolt lists 16 from Fire Ball and from Meteor (about 8%). Fire Ball lists 14 from Fire Bolt and from Meteor (about 7%).",
+          "Meteor lists 5 from Fire Bolt and 5 from Fire Ball. The D2-style rule puts those near 6% and near 50% per level. Medium confidence.",
+          "Blizzard lists 5 from Ice Bolt, Ice Blast, and Glacial Spike. The same rule puts Ice Bolt and Ice Blast near 6% and Glacial Spike near 50% per level. Medium confidence.",
+          "Ice Blast lists 8 from Ice Bolt, Blizzard, and Frozen Orb (about 4%). Glacial Spike lists 5 from Ice Bolt, Ice Blast, and Frozen Orb (about 3%).",
+          "Lightning lists 8 from Charged Bolt, Chain Lightning, and Nova (about 4%). Chain Lightning lists 4 from those three (about 2%)."
+        ],
+        "passives": [
+          "Warmth — skills recharge 6% faster per level.",
+          "Enchant — fire skills burn 8% harder per level, Hydra's bolts 16%.",
+          "Energy Shield — take 8% less damage per level.",
+          "Fire Mastery, Cold Mastery, and Lightning Mastery — +10% to that element per level. Each requires level 30."
+        ],
+        "scaling": "Calculated, approximate. From level 1 to 8, before synergies: Ice Blast about 12×, Ice Bolt about 11×, Fire Bolt about 9×.",
+        "tips": [
+          "Ice Blast (about 11.6×) and Ice Bolt (about 11×) grow the most. Ice Bolt also takes about 8% per level from each of five cold skills.",
+          "The earliest evolution in this data is Fire Bolt plus Warmth into Fire Ball at character level 12, then Enchant into Meteor at 24.",
+          "Cold path: Ice Blast plus Faster Cast Rate into Glacial Spike at 18, then Replenish Life into Blizzard at 24. Frozen Orb waits on Cold Mastery, which requires level 30.",
+          "Static Field removes about 15% to 29% of a monster's life from level 1 to 8, and about a third of that on elites. Calculated, approximate.",
+          "In Hell the starting offer leaves out fire skills when another choice exists.",
+          "Base Energy is 35, the highest of the seven classes. Every 5 Energy adds about 5% fire, cold, lightning, poison, and magic damage."
+        ]
+      }
     },
     {
       "id": "necromancer",
@@ -209,7 +281,37 @@
           ]
         }
       ],
-      "rules": []
+      "rules": [],
+      "fromGame": {
+        "chains": [
+          "Teeth + Bone Wall → Bone Spear at 18, then Bone Spear + Bone Armor → Bone Spirit at 30.",
+          "Poison Dagger + Faster Cast Rate → Poison Explosion at 18, then Poison Explosion + Lower Resist → Poison Nova at 30.",
+          "Dim Vision + Telekinesis → Confuse at 18, then Confuse + Vitality → Attract at 24.",
+          "Amplify Damage + Faster Run/Walk → Decrepify at 24.",
+          "Clay Golem + Golem Mastery → Blood Golem at 18, then Blood Golem + Summon Resist → Iron Golem at 24, then Iron Golem + Golem Mastery → Fire Golem at 30.",
+          "Raise Skeleton + Skeleton Mastery → Revive at 30."
+        ],
+        "synergies": [
+          "Teeth lists 15 from Bone Wall, Bone Spear, Bone Prison, and Bone Spirit, about 8% per level from each.",
+          "Bone Spear lists 7 from Teeth, Bone Wall, Bone Prison, and Bone Spirit (about 4%). Bone Spirit lists 6 from those (about 3%).",
+          "Poison Dagger lists 20 from Poison Explosion and Poison Nova (about 10%). Poison Explosion lists 15 from the dagger and the nova (about 8%). Poison Nova lists 10 from the dagger and the explosion (about 5%)."
+        ],
+        "passives": [
+          "Bone Armor — take 8% less damage per level.",
+          "Bone Wall — +10% magic damage per level for Teeth, Bone Spear, and Bone Spirit.",
+          "Skeleton Mastery — skeletons, mages, and revives gain 20% life and damage per level.",
+          "Golem Mastery — golems gain 25% life, 10% damage, and 8% speed per level.",
+          "Summon Resist — summons take 12% less per level from blows that carry fire, cold, lightning, or poison."
+        ],
+        "scaling": "Calculated, approximate. From level 1 to 8, before synergies: Poison Dagger about 53×, Raise Skeletal Mage about 45×, Raise Skeleton about 27×.",
+        "tips": [
+          "Poison Dagger, Raise Skeletal Mage, and Raise Skeleton are the steepest growth figures in this data.",
+          "Poison path: Poison Dagger plus Faster Cast Rate into Poison Explosion at 18, then Lower Resist into Poison Nova at 30. The dagger keeps about 10% per level from each evolved form.",
+          "Lower Resist, a level-30 passive, is about −25% fire, cold, lightning, and poison resistance at level 1 and about −47% at level 5, a fifth of that on an immune. Amplify Damage clears physical resistance, a fifth of that on an immune. Both readings are approximate.",
+          "Curses are offered at 0.4× weight, so they show up less often than other cards.",
+          "The golem chain uses Golem Mastery twice and Summon Resist once, and it is what replaces Clay Golem with Iron Golem. Skeleton Mastery catalyzes Raise Skeleton → Revive at 30."
+        ]
+      }
     },
     {
       "id": "paladin",
@@ -228,7 +330,40 @@
             }
           ]
         }
-      ]
+      ],
+      "fromGame": {
+        "chains": [
+          "Zeal + Might → Passion (required level 18, earliest character level 19).",
+          "Charge + Vigor → Herald of Zakarum (required level 18, earliest character level 19).",
+          "Blessed Hammer + Concentration → Zakarum's Hand at 24.",
+          "Holy Bolt + Holy Shock → Fist of the Heavens at 30.",
+          "Holy Shield + Defiance → Exile (required level 30, earliest character level 31)."
+        ],
+        "synergies": [
+          "Blessed Hammer lists 14 from Blessed Aim and from Vigor, about 7% per level.",
+          "Holy Bolt lists 50 from Blessed Hammer and from Fist of the Heavens, about 25% per level, the largest listed synergy in this data.",
+          "Zeal lists 12 from Sacrifice (about 6%). Charge lists 20 from Vigor and from Might (about 10%).",
+          "Sacrifice lists 15 from Redemption (about 8%) and 5 from Fanaticism (about 3%).",
+          "Vengeance lists 10 from each Resist aura (about 5%) and 2 from Salvation (about 1%).",
+          "Fist of the Heavens lists 15 from Holy Bolt (about 8%) and 7 from Holy Shock (about 4%)."
+        ],
+        "passives": [
+          "Might — aura, +10% physical damage per level for Zeal, Smite, and Charge.",
+          "Holy Freeze — aura, nearby monsters are slowed by half and chilled.",
+          "Concentration — aura, +10% magic damage per level for Blessed Hammer, Holy Bolt, and Holy Shield.",
+          "Fanaticism — aura, skills recharge 5% faster and physical damage is 4% higher, per level.",
+          "Defiance — aura, take 6% less damage per level.",
+          "Holy Shock — aura, lightning jolts nearby monsters. It catalyzes Fist of the Heavens."
+        ],
+        "scaling": "Calculated, approximate. From level 1 to 8, before synergies: Blessed Hammer about 22×, Holy Bolt about 19.5×, Zeal about 17×.",
+        "tips": [
+          "Blessed Hammer, the fixed first skill, and Holy Bolt scale the hardest. Holy Bolt takes about 25% per level from both the hammer and Fist of the Heavens.",
+          "Auras are passives, so All Skills and tree bonuses push them past level 5. An aura mod on gear grants that aura, capped at the aura's max level.",
+          "Concentration catalyzes Blessed Hammer → Zakarum's Hand at 24. Might catalyzes Zeal → Passion.",
+          "Conviction lowers fire, cold, and lightning resistance, a fifth as much on an immune, which lines up with Vengeance and Fist of the Heavens. The client does not store that cut as one fixed percent.",
+          "Vengeance takes about 5% per level from each Resist aura and about 1% per level from Salvation."
+        ]
+      }
     },
     {
       "id": "barbarian",
@@ -269,6 +404,38 @@
         "href": "https://d2survivors.com/guide/",
         "hrefLabel": "d2survivors.com/guide/",
         "note": "Fan beginner guide. Gameplay observations dated 18 Oct 2026 on that page."
+      },
+      "fromGame": {
+        "chains": [
+          "Bash + Axe Mastery → Concentrate at 18, then Concentrate + Iron Skin → Berserk at 30.",
+          "Leap + Faster Run/Walk → Leap Attack at 18.",
+          "Double Throw + Throwing Mastery → Lacerator (required level 18, earliest character level 19).",
+          "Double Swing + Increased Speed → Frenzy at 24.",
+          "Shout + Vitality → Battle Orders at 24, then Battle Orders + Find Item → Battle Command at 30."
+        ],
+        "synergies": [
+          "Double Swing lists 10 from Bash (about 5%). Bash lists 8 from Stun (about 4%), and Stun lists 5 from Bash (about 3%).",
+          "Double Throw lists 8 from Double Swing (about 4%). Frenzy lists 8 from Double Swing and from Taunt (about 4%).",
+          "Concentrate lists 5 from Bash (about 3%) and 10 from Battle Orders (about 5%). Berserk lists 10 from Howl and from Shout (about 5%).",
+          "Leap Attack lists 10 from Leap (about 5%). War Cry lists 6 from Howl, Taunt, and Battle Cry (about 3%)."
+        ],
+        "passives": [
+          "Axe Mastery — +12% physical damage and +3% critical strike chance per level, twice Sword, Mace, Pole Arm, and Spear Mastery.",
+          "Sword, Mace, Pole Arm, and Spear Mastery — +6% physical damage and +1.5% critical strike chance per level.",
+          "Throwing Mastery — thrown axes deal 15% more damage and have +6% chance to pierce, per level.",
+          "Iron Skin — take 7% less damage per level.",
+          "Increased Stamina — +10% maximum life per level.",
+          "Natural Resistance — take 4% less damage per level; poison and chill wear off 25% faster.",
+          "Find Potion — slain monsters have a 1% chance per level to leave a healing potion."
+        ],
+        "scaling": "Calculated, approximate. Whirlwind about 21× by level 8 (required level 30). Other attacks sit around 6–7×.",
+        "tips": [
+          "Whirlwind is the attack that scales, about 21× by level 8, from more hits and a longer path. The other attacks stay near 6–7×.",
+          "Axe Mastery is double the other weapon masteries, and it catalyzes Bash → Concentrate.",
+          "Battle Cry makes monsters, bosses included, take about 15% to 43% more damage from level 1 to 8. Shout reduces damage taken by about 15% to 29%. Calculated, approximate.",
+          "Shout plus Vitality becomes Battle Orders at 24, then Find Item becomes Battle Command at 30. Battle Command reads as +1 to all skills while it is active. Medium confidence.",
+          "The starting skill, Double Swing, plus Increased Speed becomes Frenzy at 24. Bash goes to Concentrate at 18 and then Berserk at 30."
+        ]
       }
     },
     {
@@ -312,7 +479,42 @@
             }
           ]
         }
-      ]
+      ],
+      "fromGame": {
+        "chains": [
+          "Raven + Ravenlore → Summon Spirit Wolf (required level 6, earliest character level 8), then Spirit Wolf + Ravenlore → Summon Dire Wolf at 18, then Dire Wolf + Vitality → Summon Grizzly at 30.",
+          "Firestorm + Cyclone Armor → Molten Boulder at 12.",
+          "Poison Creeper + Replenish Life → Carrion Vine at 12, then Carrion Vine + Faster Cast Rate → Solar Creeper at 24.",
+          "Werebear + Lycanthropy → Maul (required level 12, earliest character level 13), then Maul + Lycanthropy → Shock Wave at 24.",
+          "Oak Sage + Spirit Keeper → Heart of Wolverine at 18, then Heart of Wolverine + Replenish Life → Spirit of Barbs at 30.",
+          "Fissure + Faster Cast Rate → Volcano at 24, then Volcano + Fire Claws → Armageddon at 30.",
+          "Twister + Faster Run/Walk → Tornado (required level 24, earliest character level 25), then Tornado + Cyclone Armor → Hurricane at 30.",
+          "Werewolf + Feral Rage → Fury at 30."
+        ],
+        "synergies": [
+          "Firestorm lists 23 from Molten Boulder and from Fissure, about 12% per level.",
+          "Fissure lists 12 from Firestorm and from Volcano (about 6%). Volcano and Armageddon list 12 to 14 from the fire skills around them (about 6–7%).",
+          "Twister lists 10 from Tornado and Hurricane (about 5%). Tornado lists 9 from Cyclone Armor, Twister, and Hurricane (about 5%). Hurricane lists 9 from Twister and Tornado (about 5%).",
+          "Arctic Blast lists 15 from Hurricane and Cyclone Armor (about 8%). Shock Wave lists 5 from Maul (about 3%)."
+        ],
+        "passives": [
+          "Feral Rage — +8% physical damage per level.",
+          "Rabies — wereform blows add 32 poison over 4 seconds, and a death spreads it to 3 nearby monsters.",
+          "Hunger — werewolf and werebear blows heal 4% of their damage.",
+          "Fire Claws — +10% fire damage per level, and wereform claws burn.",
+          "Cyclone Armor — +10% cold damage and 5% less damage taken, per level.",
+          "Ravenlore — ravens, wolves, the grizzly, and creepers gain 15% life and damage per level.",
+          "Spirit Keeper — spirits' bonuses and vines' meals are 12% stronger per level, including creeper poison."
+        ],
+        "scaling": "Calculated, approximate. From level 1 to 8, before synergies: Poison Creeper about 21×, Twister about 12×, Raven about 11×. Werebear's blow is about 7× (about 48 to 344).",
+        "tips": [
+          "Poison Creeper, Twister, and Raven are his steepest growth. Werebear's blow is only about 7×.",
+          "Early evolutions: Raven plus Ravenlore can become Summon Spirit Wolf at character level 8. Firestorm and Poison Creeper both evolve at 12.",
+          "Cyclone Armor catalyzes both Firestorm → Molten Boulder and Tornado → Hurricane. Lycanthropy catalyzes Werebear → Maul → Shock Wave.",
+          "Fire path: Fissure plus Faster Cast Rate into Volcano at 24, then Fire Claws into Armageddon at 30. Volcano and Armageddon share about 6–7% per level.",
+          "Ravenlore adds life and damage to ravens, wolves, the grizzly, and creepers, and it catalyzes two steps of the wolf chain."
+        ]
+      }
     },
     {
       "id": "assassin",
@@ -365,7 +567,98 @@
             }
           ]
         }
-      ]
+      ],
+      "fromGame": {
+        "chains": [
+          "Dragon Talon + Faster Run/Walk → Dragon Claw (required level 6, earliest character level 8), then Dragon Claw + Claw Mastery → Dragon Tail at 18, then Dragon Tail + Burst of Speed → Dragon Flight at 24.",
+          "Fire Blast + Faster Cast Rate → Wake of Fire at 12, then Wake of Fire + Fade → Wake of Inferno at 24.",
+          "Fists of Fire + Claw Mastery → Claws of Thunder at 18, then Claws of Thunder + Weapon Block → Blades of Ice at 24.",
+          "Blade Sentinel + Burst of Speed → Blade Fury at 18, then Blade Fury + Vitality → Blade Shield at 30.",
+          "Charged Bolt Sentry + Faster Cast Rate → Lightning Sentry at 24, then Lightning Sentry + Faster Cast Rate → Death Sentry at 30.",
+          "Psychic Hammer + Fade → Mind Blast at 24.",
+          "Tiger Strike + Venom → Phoenix Strike at 30.",
+          "Shadow Warrior + Weapon Block → Shadow Master at 30."
+        ],
+        "synergies": [
+          "Fire Blast lists 9 from Shock Web, Charged Bolt Sentry, Wake of Fire, Lightning Sentry, Wake of Inferno, and Death Sentry, about 5% per level.",
+          "Shock Web lists 11 from the lightning sentries (about 6%). Lightning Sentry lists 12 from Shock Web, Charged Bolt Sentry, and Death Sentry (about 6%).",
+          "Phoenix Strike lists 10 from Fists of Fire (about 5%), 13 from Claws of Thunder (about 7%), and 10 from Blades of Ice (about 5%)."
+        ],
+        "passives": [
+          "Claw Mastery — +12% physical damage and +3% critical strike chance per level.",
+          "Weapon Block — +6% chance per level to block with claws.",
+          "Fade — take 6% less damage per level; poison and chill wear off 20% faster.",
+          "Venom — claws and blades deal 8 poison damage a second for 2 seconds.",
+          "Burst of Speed — cooldowns are 4% shorter per level."
+        ],
+        "scaling": "Calculated, approximate. From level 1 to 8, before synergies: Psychic Hammer about 19×, Shock Web about 12×. Most traps and martial arts sit around 3–8×.",
+        "tips": [
+          "Psychic Hammer (about 19×, more targets) and Shock Web (about 12×) outgrow the rest. Most traps and martial arts are about 3–8× before synergies.",
+          "Fire Blast takes about 5% per level from every sentry in that list, so a trap set stacks it quickly.",
+          "Faster Cast Rate catalyzes three trap evolutions: Wake of Fire, Lightning Sentry, and Death Sentry. Claw Mastery catalyzes Claws of Thunder and Dragon Tail.",
+          "Dragon Claw can arrive as early as character level 8. Wake of Fire is at 12.",
+          "Cloak of Shadows makes blinded monsters take about 15% to 36% more damage from level 1 to 8. Calculated, approximate."
+        ]
+      }
     }
-  ]
+  ],
+  "gameData": {
+    "label": "From game data as of bundle game-CIkDLfxB.js, changelog build 20261018.8, checked 18 Oct 2026 ~21:20 MDT. Not tested in play.",
+    "recheck": "Recheck this section when that bundle's filename or hash changes. Scaling figures are calculated and approximate.",
+    "sections": [
+      {
+        "title": "Slots and level caps",
+        "paragraphs": [
+          "Skill slots and passive slots are separate: 6 and 6 on Normal, 8 and 8 on Nightmare, 10 and 10 in Hell.",
+          "Active skills stop at level 8, passives at 5 (Telekinesis at 3), and an evolved skill at 1.",
+          "A skill cannot rise above character level minus its required level, plus 1. A skill that requires level R reaches 8 only once the character is at least R+7."
+        ]
+      },
+      {
+        "title": "Level-up cards",
+        "paragraphs": [
+          "Each level-up shows 3 cards: a new skill while a skill slot is free, +1 to a skill or passive you already have, or a new passive while a passive slot is free.",
+          "A run has 2 rerolls, 2 skips, and 2 banishes.",
+          "A passive that would evolve a skill you own is offered four times as often. +1 to a skill that can evolve is twice as likely, or four times once you hold its catalyst. When free passive slots are no more than the catalysts you still need, the only new passives offered are those catalysts. Necromancer curses are offered at 0.4 times the usual weight.",
+          "The first offer is one level-1 damage skill from each tree. Paladin always starts with Blessed Hammer, and Barbarian always starts with Double Swing. In Hell, fire skills are left out of that starting offer when another choice exists."
+        ]
+      },
+      {
+        "title": "Evolution",
+        "paragraphs": [
+          "A skill evolves when it is at its max level, you own its catalyst passive at any level, and your character level meets the required level of both the evolved skill and the catalyst. The next chest performs the evolution. The evolved skill starts at level 1, which is its max, and its cooldown resets.",
+          "A further step only needs the next catalyst and that step's level requirement.",
+          "Some catalysts are the general passives Faster Cast Rate, Faster Run/Walk, Vitality, and Replenish Life. Where the earliest character level is higher than the required level, both are shown on the class."
+        ]
+      },
+      {
+        "title": "+skills",
+        "paragraphs": [
+          "Effective level is the base level, plus All Skills, plus Fire, Cold, or Lightning Skills when the skill is that element, plus skill-tree bonuses, plus a bonus to that one skill. It is not capped at 8.",
+          "Evolved skills only grow through +skills. Each extra level is worth the larger of 15% more, or continuing the damage curve of the skill it replaced.",
+          "Passives, including Paladin auras, also gain All Skills and tree bonuses. The changelog line above is the published note; this paragraph is the client formula."
+        ]
+      },
+      {
+        "title": "Synergies",
+        "paragraphs": [
+          "A listed synergy is halved and rounded, per level of the source skill. Listed 12 is about 6% per level, listed 15 is about 8%, and listed 3 is about 2%.",
+          "Meteor and Blizzard use a D2-style scale: listed percent, times one half, times 20 divided by the source skill's max level. Those resulting percents are medium confidence.",
+          "A skill you evolved away from still counts as its max level for synergy. An evolved skill keeps the synergy list of the skill it replaced."
+        ]
+      },
+      {
+        "title": "Item mods",
+        "paragraphs": [
+          "Enhanced Damage becomes attack damage at 40% of the listed figure, so 100% enhanced damage is +40% attack damage. A max-damage percent on a caster weapon is ignored.",
+          "Increased Attack Speed counts as half as much faster cast rate, because skills run on cooldowns.",
+          "Enhanced Defense becomes damage reduction of 15 times the natural log of (1 + enhanced defense / 100), in percent. A flat “Damage Reduced by N” becomes N/3 percent. Damage reduction from these stops at 50%.",
+          "A skill-tab bonus adds levels to one tree. Its index is the class index times 3, plus the tree, minus 1, with classes ordered Amazon, Sorceress, Necromancer, Paladin, Barbarian, Druid, Assassin. “+N to Class Skills” adds to all three of that class's trees. Fire, Cold, or Lightning Skills add to that element.",
+          "A charge of a skill auto-casts on a timer: the longer of that skill's cooldown at the charged level, or 60 seconds divided by the number of charges, then scaled by cast speed. The cast level cannot pass the skill's max, and it gets no synergies.",
+          "A proc on hit, on attack, or when struck is a percent chance to cast, at most once every 0.35 seconds for that proc. The level is capped at the skill's max, there are no synergies, and the skill can belong to another class.",
+          "Skills cast from gear — charges and procs — get no synergies and are capped at their max level. An aura mod runs that Paladin aura, capped at the aura's max level."
+        ]
+      }
+    ]
+  }
 }

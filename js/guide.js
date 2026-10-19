@@ -16,9 +16,11 @@ async function load() {
 function render(data) {
   root.replaceChildren();
   root.append(intro(data));
-  root.append(jumpList(data.classes));
+  root.append(jumpList(data));
   root.append(rulesPanel(data));
-  for (const cls of data.classes) root.append(classPanel(cls));
+  if (data.gameData) root.append(gamePanel(data.gameData));
+  for (const cls of data.classes) root.append(classPanel(cls, data.gameData));
+  openFromHash();
 }
 
 function intro(data) {
@@ -47,23 +49,22 @@ function intro(data) {
   return block;
 }
 
-function jumpList(classes) {
+function jumpList(data) {
   const nav = document.createElement("nav");
   nav.className = "tabs class-jump";
   nav.setAttribute("aria-label", "Classes");
-  const rules = document.createElement("a");
-  rules.className = "tab";
-  rules.href = "#rules";
-  rules.textContent = "Rules";
-  nav.append(rules);
-  for (const cls of classes) {
-    const link = document.createElement("a");
-    link.className = "tab";
-    link.href = `#${cls.id}`;
-    link.textContent = cls.name;
-    nav.append(link);
-  }
+  nav.append(jumpLink("#rules", "Rules"));
+  if (data.gameData) nav.append(jumpLink("#game-data", "Game data"));
+  for (const cls of data.classes) nav.append(jumpLink(`#${cls.id}`, cls.name));
   return nav;
+}
+
+function jumpLink(href, label) {
+  const link = document.createElement("a");
+  link.className = "tab";
+  link.href = href;
+  link.textContent = label;
+  return link;
 }
 
 function rulesPanel(data) {
@@ -75,11 +76,13 @@ function rulesPanel(data) {
   return section;
 }
 
-function classPanel(cls) {
-  const section = document.createElement("section");
-  section.className = "panel";
+function classPanel(cls, gameData) {
+  const section = document.createElement("details");
+  section.className = "panel class-fold";
   section.id = cls.id;
-  section.append(heading(cls.name));
+  const summary = document.createElement("summary");
+  summary.textContent = cls.name;
+  section.append(summary);
 
   const evolvedTitle = document.createElement("h3");
   evolvedTitle.textContent = "Evolved skills";
@@ -110,9 +113,91 @@ function classPanel(cls) {
     for (const rule of cls.rules) section.append(ruleBlock(rule));
   }
 
+  if (cls.fromGame && gameData) section.append(fromGame(cls.fromGame, gameData));
   if (cls.tip) section.append(tipBlock(cls.tip));
   return section;
 }
+
+function gamePanel(gameData) {
+  const section = document.createElement("section");
+  section.className = "panel";
+  section.id = "game-data";
+  section.append(heading("From the client"));
+  const banner = document.createElement("p");
+  banner.className = "data-banner";
+  banner.textContent = gameData.label;
+  section.append(banner);
+  section.append(paragraph(gameData.recheck));
+  for (const block of gameData.sections) {
+    const title = document.createElement("h3");
+    title.textContent = block.title;
+    section.append(title);
+    for (const text of block.paragraphs) section.append(paragraph(text));
+  }
+  return section;
+}
+
+function fromGame(block, gameData) {
+  const wrap = document.createElement("div");
+  wrap.className = "from-game";
+  const banner = document.createElement("p");
+  banner.className = "data-banner";
+  banner.textContent = gameData.label;
+  wrap.append(banner);
+
+  wrap.append(subhead("Evolution chains"));
+  wrap.append(bulletList(block.chains, "chains"));
+  wrap.append(fold("Synergy pairs", block.synergies));
+  wrap.append(fold("Notable passives", block.passives));
+
+  wrap.append(subhead("Scaling"));
+  const scaling = paragraph(block.scaling);
+  scaling.classList.add("approx");
+  wrap.append(scaling);
+
+  wrap.append(subhead("Derived tips"));
+  wrap.append(bulletList(block.tips, "derived"));
+  const label = document.createElement("p");
+  label.className = "tip-label";
+  label.textContent = "Derived from game data, not tested in play.";
+  wrap.append(label);
+  return wrap;
+}
+
+function fold(title, items) {
+  const details = document.createElement("details");
+  details.className = "fold";
+  const summary = document.createElement("summary");
+  summary.textContent = title;
+  details.append(summary);
+  details.append(bulletList(items, "pairs"));
+  return details;
+}
+
+function bulletList(items, className) {
+  const list = document.createElement("ul");
+  list.className = className;
+  for (const text of items) {
+    const item = document.createElement("li");
+    item.textContent = text;
+    list.append(item);
+  }
+  return list;
+}
+
+function subhead(text) {
+  const el = document.createElement("h3");
+  el.textContent = text;
+  return el;
+}
+
+function openFromHash() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  const el = id && document.getElementById(id);
+  if (el && el.tagName === "DETAILS") el.open = true;
+}
+
+window.addEventListener("hashchange", openFromHash);
 
 function ruleBlock(rule) {
   const block = document.createElement("div");

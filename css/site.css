@@ -456,6 +456,63 @@ a.tab {
   text-transform: uppercase;
 }
 
+.class-fold > summary {
+  cursor: pointer;
+  margin: 0 0 0.2rem;
+  padding: 0.35rem 0;
+  font-family: Cinzel, Palatino, serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  color: #f3e6c4;
+}
+
+.class-fold > summary::marker { color: var(--gold); }
+
+.from-game {
+  margin-top: 0.8rem;
+  padding-top: 0.2rem;
+  border-top: 1px solid var(--bronze);
+}
+
+.data-banner {
+  color: var(--gold);
+  line-height: 1.4;
+}
+
+.from-game h3,
+.fold > summary {
+  margin: 0.85rem 0 0.35rem;
+  font-family: Cinzel, Palatino, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #f0e2c4;
+}
+
+.fold {
+  margin: 0.2rem 0 0.5rem;
+}
+
+.fold > summary {
+  cursor: pointer;
+  margin: 0.55rem 0;
+}
+
+.chains,
+.derived,
+.pairs {
+  padding-left: 1.2rem;
+}
+
+.chains li,
+.derived li,
+.pairs li {
+  margin: 0.4rem 0;
+  line-height: 1.45;
+}
+
+.approx { color: #e7d7b4; }
+
 @media (max-width: 640px) {
   .site-header { padding-top: 1.5rem; }
   .controls button, .file-btn { flex: 1 1 auto; }

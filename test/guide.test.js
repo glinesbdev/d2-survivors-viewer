@@ -46,3 +46,27 @@ test("every rule cites a changelog build, and the barbarian tip is labeled", () 
   assert.equal(barbarian.tip.href, "https://d2survivors.com/guide/");
   assert.equal(guide.classes.filter((cls) => cls.tip).length, 1);
 });
+
+test("client data is labeled, approximate, and free of unread placeholders", () => {
+  assert.match(guide.gameData.label, /not tested in play/i);
+  assert.match(guide.gameData.label, /game-CIkDLfxB\.js/);
+  assert.match(guide.gameData.label, /20261018\.8/);
+  const blob = JSON.stringify(guide);
+  assert.equal(blob.includes("(value scales"), false);
+  assert.equal(blob.includes("see bundle"), false);
+  assert.match(blob, /Medium confidence/);
+  for (const cls of guide.classes) {
+    assert.ok(cls.fromGame.chains.length >= 4);
+    assert.ok(cls.fromGame.synergies.length >= 3);
+    assert.ok(cls.fromGame.passives.length >= 4);
+    assert.ok(cls.fromGame.tips.length >= 5 && cls.fromGame.tips.length <= 6);
+    assert.match(cls.fromGame.scaling, /Calculated, approximate/);
+  }
+  const sorc = guide.classes.find((cls) => cls.name === "Sorceress").fromGame.chains.join(" ");
+  assert.match(sorc, /Fire Bolt/);
+  assert.match(sorc, /Fire Ball/);
+  assert.match(sorc, /Meteor/);
+  const amazon = guide.classes.find((cls) => cls.name === "Amazon").fromGame.chains.join(" ");
+  assert.match(amazon, /Cold Arrow \+ Dodge/);
+  assert.match(amazon, /Ice Arrow at 18/);
+});

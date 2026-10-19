@@ -18,7 +18,11 @@ Open `http://localhost:8080`. Use **Try an example** for a small made-up save, o
 
 ## Class guide
 
-`guide.html` lists rules for the seven classes from the developer changelog. The wording lives in `data/guide.json`, so a later update is a data edit. It does not recommend builds. There is no published D2 Survivors build guide to draw from, and the page does not fill gaps from regular Diablo II.
+`guide.html` has two layers, both in `data/guide.json`.
+
+Quoted rules come from the developer changelog at `https://d2survivors.lol/changelog.json`. Evolution chains, synergy pairs, notable passives, scaling, and the item-mod notes come from the public client bundle `game-CIkDLfxB.js` (checked 18 Oct 2026, about 21:20 MDT, against changelog build `20261018.8`). That layer is labeled on the page as game data and has not been tested in play. Scaling figures are calculated approximations. Recheck `data/guide.json` when the bundle filename or its hash changes.
+
+The page does not recommend builds. It does not fill gaps from regular Diablo II.
 
 ## Tests
 
