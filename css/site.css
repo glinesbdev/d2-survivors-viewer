@@ -74,6 +74,29 @@ footer {
   text-align: center;
 }
 
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.2rem 0 1rem;
+}
+
+.site-nav a {
+  font-family: Cinzel, Palatino, serif;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: #d9cbb3;
+  border: 1px solid #4d3e28;
+  background: #1a1510;
+  padding: 0.4rem 0.85rem;
+}
+
+.site-nav a[aria-current="page"],
+.site-nav a:hover {
+  border-color: var(--gold);
+  color: #f8ecc8;
+}
+
 .mark {
   width: 36px;
   height: 36px;
@@ -368,6 +391,69 @@ footer {
   padding: 0.4rem 0 2rem;
   text-align: center;
   font-size: 0.92rem;
+}
+
+a.tab {
+  text-decoration: none;
+  color: #d9cbb3;
+}
+
+.class-jump { margin: 0 0 1rem; }
+
+.guide-intro p,
+.rule p,
+.evolved,
+.tip p {
+  line-height: 1.45;
+}
+
+.guide-intro a,
+.tip a {
+  color: var(--gold);
+}
+
+.checked {
+  margin-top: 0;
+  color: var(--gold);
+  font-family: Cinzel, Palatino, serif;
+  letter-spacing: 0.04em;
+  font-size: 0.92rem;
+}
+
+.rule h3,
+.panel > h3 {
+  margin: 1rem 0 0.35rem;
+  font-family: Cinzel, Palatino, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #f0e2c4;
+}
+
+.evolved { padding-left: 1.2rem; }
+.evolved li { margin: 0.55rem 0; }
+.evolved strong { color: var(--unique); }
+
+.cites {
+  margin: 0.25rem 0 0.8rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.tip {
+  margin-top: 0.6rem;
+  padding: 0.75rem 0.9rem 0.4rem;
+  border: 1px solid var(--gold-dim);
+  background: rgba(36, 28, 16, 0.72);
+}
+
+.tip-label {
+  margin: 0 0 0.35rem;
+  color: var(--gold);
+  font-family: Cinzel, Palatino, serif;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 640px) {

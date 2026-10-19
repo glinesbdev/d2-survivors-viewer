@@ -14,7 +14,11 @@ Any static file server works. From the repo root:
 python3 -m http.server 8080
 ```
 
-Open `http://localhost:8080`. Use **Try an example** for a small made-up save, or paste a real `D2S1:` code.
+Open `http://localhost:8080`. Use **Try an example** for a small made-up save, or paste a real `D2S1:` code. The class guide is `guide.html`.
+
+## Class guide
+
+`guide.html` lists rules for the seven classes from the developer changelog. The wording lives in `data/guide.json`, so a later update is a data edit. It does not recommend builds. There is no published D2 Survivors build guide to draw from, and the page does not fill gaps from regular Diablo II.
 
 ## Tests
 
@@ -32,6 +36,6 @@ A code is the prefix `D2S1:` plus URL-safe base64 (no padding) of zlib-compresse
 
 ## Deployment
 
-Pushes to `main` run `.github/workflows/pages.yml`, which publishes the static files with GitHub Actions.
+Pushes to `main` run `.github/workflows/pages.yml`, which publishes the static files with GitHub Actions. `.nojekyll` is included so a branch-source Pages site serves the files as they are. Links are relative (`guide.html`, `css/site.css`), including when the site is hosted under a project path.
 
 In the repository settings, open **Pages** and set the source to **GitHub Actions**. The workflow cannot turn that setting on by itself. After it is enabled, the site is served from the Pages URL for this repo.

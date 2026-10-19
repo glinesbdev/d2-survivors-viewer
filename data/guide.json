@@ -1,0 +1,371 @@
+{
+  "lastChecked": "2026-10-19",
+  "changelogThrough": {
+    "build": "20261018.8",
+    "date": "2026-10-18"
+  },
+  "changelogUrl": "https://d2survivors.lol/changelog.json",
+  "intro": "Rules for the seven playable classes, taken from the developer changelog. No D2 Survivors build guides are published yet, so this page does not recommend builds. The game changes often.",
+  "classesNote": "The game site describes all seven heroes. They are Amazon, Sorceress, Necromancer, Paladin, Barbarian, Druid and Assassin. Warlock is not in the game.",
+  "siteUrl": "https://d2survivors.lol/",
+  "general": [
+    {
+      "title": "Skill slots",
+      "paragraphs": [
+        "A run starts as in D2, with only Attack and your starting weapon. The first card comes at once: a first skill from each skill tree, so all six skill slots are yours to fill.",
+        "A run started on Nightmare or Hell has its skill and passive slots from the start: 8 and 8 on Nightmare, 10 and 10 in Hell.",
+        "An earlier build said each difficulty adds two more skill slots and two more passive slots."
+      ],
+      "cites": [
+        {
+          "build": "20261017.19",
+          "date": "2026-10-17",
+          "quote": "A run starts as in D2, with only Attack and your starting weapon, and your first card comes at once: a first skill from each skill tree, so all six skill slots are yours to fill"
+        },
+        {
+          "build": "20261017.3",
+          "date": "2026-10-17",
+          "quote": "A run started on Nightmare or Hell has its skill and passive slots from the start: 8 and 8 on Nightmare, 10 and 10 in Hell"
+        },
+        {
+          "build": "20261016.10",
+          "date": "2026-10-16",
+          "quote": "Two more skill and passive slots each difficulty"
+        }
+      ]
+    },
+    {
+      "title": "+skills, passives and auras",
+      "paragraphs": [
+        "+skills on gear raise passives and auras too.",
+        "Evolved skills grow with +skills like the skills they replace. The changelog does not name which skill each evolved skill replaces."
+      ],
+      "cites": [
+        {
+          "build": "20261016.15",
+          "date": "2026-10-16",
+          "quote": "+skills on gear raise passives and auras too"
+        },
+        {
+          "build": "20261016.15",
+          "date": "2026-10-16",
+          "quote": "Evolved skills grow with +skills like the skills they replace"
+        }
+      ]
+    },
+    {
+      "title": "Late-run chests",
+      "paragraphs": [
+        "Champions' and uniques' chests give level-ups through Act II and now and then in Act III, then stat points or +1 to a skill tree. The build fills in Acts IV and V."
+      ],
+      "cites": [
+        {
+          "build": "20261017.2",
+          "date": "2026-10-17",
+          "quote": "Champions' and uniques' chests give level-ups through Act II and now and then in Act III, then stat points or +1 to a skill tree: the build fills in Acts IV-V"
+        }
+      ]
+    },
+    {
+      "title": "Lowering resistance",
+      "paragraphs": [
+        "-% to Enemy Resistance lowers a monster's resistance, as in D2, instead of adding damage.",
+        "Monsters resist each element by D2's numbers, and immunities break only as D2's do: Amplify Damage, Decrepify, Lower Resist and Conviction lower resistances, a fifth as much on an immune."
+      ],
+      "cites": [
+        {
+          "build": "20261018.5",
+          "date": "2026-10-18",
+          "quote": "-% to Enemy Resistance lowers a monster's resistance, as in D2, instead of adding damage"
+        },
+        {
+          "build": "20261017.8",
+          "date": "2026-10-17",
+          "quote": "Monsters resist each element by D2's numbers, and immunities break only as D2's do: Amplify Damage, Decrepify, Lower Resist and Conviction lower resistances, a fifth as much on an immune"
+        }
+      ]
+    },
+    {
+      "title": "Life stolen",
+      "paragraphs": [
+        "Life Stolen goes by the damage a monster takes: less from physically resistant ones, none from immunes."
+      ],
+      "cites": [
+        {
+          "build": "20261018.5",
+          "date": "2026-10-18",
+          "quote": "Life Stolen goes by the damage a monster takes: less from physically resistant ones, none from immunes"
+        }
+      ]
+    },
+    {
+      "title": "Required level",
+      "paragraphs": [
+        "The changelog flipped this on the same day. The later line is the one that still stands: gear works at any level again. An item's Required Level is shown, but it no longer holds the item back.",
+        "The earlier line that day said gear asks its D2 Required Level again: you can wear it at any level, but above yours it shows red and gives nothing until you reach it."
+      ],
+      "cites": [
+        {
+          "build": "20261017.19",
+          "date": "2026-10-17",
+          "quote": "Gear works at any level again: an item's Required Level is shown, but it no longer holds the item back"
+        },
+        {
+          "build": "20261017.6",
+          "date": "2026-10-17",
+          "quote": "Gear asks its D2 Required Level again: wear it at any level, but above yours it shows red and gives nothing until you reach it"
+        }
+      ]
+    },
+    {
+      "title": "New weapon bases",
+      "paragraphs": [
+        "New bases: crossbows, spears, polearms and more. The changelog does not say these belong to one class."
+      ],
+      "cites": [
+        {
+          "build": "20261015.44",
+          "date": "2026-10-15",
+          "quote": "New bases: crossbows, spears, polearms and more"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "evolved": [],
+      "rules": [
+        {
+          "paragraphs": [
+            "Dodge, Avoid and Evade work as in D2: Dodge and Avoid while she stands still, Evade while she moves, never all three at once."
+          ],
+          "cites": [
+            {
+              "build": "20261018.2",
+              "date": "2026-10-18",
+              "quote": "The Amazon's Dodge, Avoid and Evade work as in D2: Dodge and Avoid while she stands still, Evade while she moves, never all three at once"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sorceress",
+      "name": "Sorceress",
+      "evolved": [
+        {
+          "name": "Meteor",
+          "detail": "Gets its full synergies from the skills it evolved from. The changelog does not name that skill.",
+          "cites": [
+            {
+              "build": "20261016.18",
+              "date": "2026-10-16",
+              "quote": "Meteor and Blizzard get their full synergies from the skills they evolved from"
+            }
+          ]
+        },
+        {
+          "name": "Blizzard",
+          "detail": "Gets its full synergies from the skills it evolved from. The changelog does not name that skill.",
+          "cites": [
+            {
+              "build": "20261016.18",
+              "date": "2026-10-16",
+              "quote": "Meteor and Blizzard get their full synergies from the skills they evolved from"
+            }
+          ]
+        }
+      ],
+      "rules": [
+        {
+          "paragraphs": [
+            "Frozen Armor and Shiver Armor turn aside monsters' missiles too, as D2's Defense does."
+          ],
+          "cites": [
+            {
+              "build": "20261018.2",
+              "date": "2026-10-18",
+              "quote": "Frozen Armor and Shiver Armor turn aside monsters' missiles too, as D2's Defense does"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "necromancer",
+      "name": "Necromancer",
+      "evolved": [
+        {
+          "name": "Iron Golem",
+          "detail": "No longer deals less than the skill it replaces. The changelog does not name that skill.",
+          "cites": [
+            {
+              "build": "20261016.19",
+              "date": "2026-10-16",
+              "quote": "Claws of Thunder, Iron Golem, Hurricane, Blade Shield and Shadow Master no longer deal less than the skills they replace"
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "id": "paladin",
+      "name": "Paladin",
+      "evolved": [],
+      "rules": [
+        {
+          "paragraphs": [
+            "Smite strikes as in D2: your sword's and your shield's damage together, at your shield bash's pace."
+          ],
+          "cites": [
+            {
+              "build": "20261018.2",
+              "date": "2026-10-18",
+              "quote": "Smite strikes as in D2: your sword's and your shield's damage together, at your shield bash's pace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barbarian",
+      "name": "Barbarian",
+      "evolved": [],
+      "rules": [
+        {
+          "paragraphs": [
+            "Barbarians and Assassins can wield a weapon in each hand."
+          ],
+          "cites": [
+            {
+              "build": "20261016.8",
+              "date": "2026-10-16",
+              "quote": "Barbarians and Assassins can wield a weapon in each hand"
+            }
+          ]
+        },
+        {
+          "paragraphs": [
+            "Whirlwind and Leap go where you steer."
+          ],
+          "cites": [
+            {
+              "build": "20261016.5",
+              "date": "2026-10-16",
+              "quote": "Whirlwind and Leap now go where you steer"
+            }
+          ]
+        }
+      ],
+      "tip": {
+        "label": "Fan tip, not a changelog rule",
+        "paragraphs": [
+          "For a straightforward first run, try Barbarian and choose Double Swing when the skill choices appear.",
+          "Attacks such as Double Swing fire automatically, so focus on making room around enemies and collecting nearby drops. As you level up, read the choices and select an upgrade that supports your current skills."
+        ],
+        "href": "https://d2survivors.com/guide/",
+        "hrefLabel": "d2survivors.com/guide/",
+        "note": "Fan beginner guide. Gameplay observations dated 18 Oct 2026 on that page."
+      }
+    },
+    {
+      "id": "druid",
+      "name": "Druid",
+      "evolved": [
+        {
+          "name": "Hurricane",
+          "detail": "No longer deals less than the skill it replaces. The changelog does not name that skill.",
+          "cites": [
+            {
+              "build": "20261016.19",
+              "date": "2026-10-16",
+              "quote": "Claws of Thunder, Iron Golem, Hurricane, Blade Shield and Shadow Master no longer deal less than the skills they replace"
+            }
+          ]
+        }
+      ],
+      "rules": [
+        {
+          "paragraphs": [
+            "A Druid shifts only while the spells he has put more levels in than his Werewolf or Werebear recharge, and turns back as soon as one is ready, so a wereform picked late no longer stops his spells. The wereforms' cards say No spells in red."
+          ],
+          "cites": [
+            {
+              "build": "20261017.16",
+              "date": "2026-10-17",
+              "quote": "A Druid shifts only while the spells he has put more levels in than his Werewolf or Werebear recharge, and turns back as soon as one is ready, so a wereform picked late no longer stops his spells; the wereforms' cards say No spells in red"
+            }
+          ]
+        },
+        {
+          "paragraphs": [
+            "Raven, Oak Sage and shapeshifting grow with +skills past their maximum."
+          ],
+          "cites": [
+            {
+              "build": "20261016.19",
+              "date": "2026-10-16",
+              "quote": "The Druid's Raven, Oak Sage and shapeshifting grow with +skills past their maximum"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assassin",
+      "name": "Assassin",
+      "evolved": [
+        {
+          "name": "Claws of Thunder",
+          "detail": "No longer deals less than the skill it replaces. The changelog does not name that skill.",
+          "cites": [
+            {
+              "build": "20261016.19",
+              "date": "2026-10-16",
+              "quote": "Claws of Thunder, Iron Golem, Hurricane, Blade Shield and Shadow Master no longer deal less than the skills they replace"
+            }
+          ]
+        },
+        {
+          "name": "Blade Shield",
+          "detail": "No longer deals less than the skill it replaces. The changelog does not name that skill.",
+          "cites": [
+            {
+              "build": "20261016.19",
+              "date": "2026-10-16",
+              "quote": "Claws of Thunder, Iron Golem, Hurricane, Blade Shield and Shadow Master no longer deal less than the skills they replace"
+            }
+          ]
+        },
+        {
+          "name": "Shadow Master",
+          "detail": "No longer deals less than the skill it replaces. The changelog does not name that skill.",
+          "cites": [
+            {
+              "build": "20261016.19",
+              "date": "2026-10-16",
+              "quote": "Claws of Thunder, Iron Golem, Hurricane, Blade Shield and Shadow Master no longer deal less than the skills they replace"
+            }
+          ]
+        }
+      ],
+      "rules": [
+        {
+          "paragraphs": [
+            "Barbarians and Assassins can wield a weapon in each hand."
+          ],
+          "cites": [
+            {
+              "build": "20261016.8",
+              "date": "2026-10-16",
+              "quote": "Barbarians and Assassins can wield a weapon in each hand"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
