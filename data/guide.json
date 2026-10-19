@@ -603,8 +603,10 @@
     }
   ],
   "gameData": {
-    "label": "From game data as of bundle game-CIkDLfxB.js, changelog build 20261018.8, checked 18 Oct 2026 ~21:20 MDT. Not tested in play.",
-    "recheck": "Recheck this section when that bundle's filename or hash changes. Scaling figures are calculated and approximate.",
+    "bundle": "game-CIkDLfxB.js",
+    "bundleSha256": "00cb1cae524c784760eaf2e9ca996b1a69485f3dcd29596673dab7e25101cc3d",
+    "label": "From the game's data, checked 18 Oct 2026 (changelog build 20261018.8); not tested in play.",
+    "recheck": "Scaling figures are calculated and approximate.",
     "sections": [
       {
         "title": "Slots and level caps",

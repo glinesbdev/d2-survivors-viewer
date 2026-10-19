@@ -48,9 +48,16 @@ test("every rule cites a changelog build, and the barbarian tip is labeled", () 
 });
 
 test("client data is labeled, approximate, and free of unread placeholders", () => {
+  assert.match(guide.gameData.label, /From the game's data, checked 18 Oct 2026/);
   assert.match(guide.gameData.label, /not tested in play/i);
-  assert.match(guide.gameData.label, /game-CIkDLfxB\.js/);
   assert.match(guide.gameData.label, /20261018\.8/);
+  const shown = [
+    guide.gameData.label,
+    guide.gameData.recheck,
+    ...guide.gameData.sections.flatMap((section) => [section.title, ...section.paragraphs]),
+  ];
+  for (const text of shown) assert.doesNotMatch(text, /game-CIkDLfxB|\.js/);
+  assert.equal(guide.gameData.bundle, "game-CIkDLfxB.js");
   const blob = JSON.stringify(guide);
   assert.equal(blob.includes("(value scales"), false);
   assert.equal(blob.includes("see bundle"), false);

@@ -20,7 +20,7 @@ Open `http://localhost:8080`. Use **Try an example** for a small made-up save, o
 
 `guide.html` has two layers, both in `data/guide.json`.
 
-Quoted rules come from the developer changelog at `https://d2survivors.lol/changelog.json`. Evolution chains, synergy pairs, notable passives, scaling, and the item-mod notes come from the public client bundle `game-CIkDLfxB.js` (checked 18 Oct 2026, about 21:20 MDT, against changelog build `20261018.8`). That layer is labeled on the page as game data and has not been tested in play. Scaling figures are calculated approximations. Recheck `data/guide.json` when the bundle filename or its hash changes.
+Quoted rules come from the developer changelog at `https://d2survivors.lol/changelog.json`. Evolution chains, synergy pairs, notable passives, scaling, and the item-mod notes come from the public client bundle `game-CIkDLfxB.js` (sha256 `00cb1cae524c784760eaf2e9ca996b1a69485f3dcd29596673dab7e25101cc3d`, checked 18 Oct 2026, about 21:20 MDT, against changelog build `20261018.8`). The page labels that layer in plain wording and does not show the bundle filename. It has not been tested in play. Scaling figures are calculated approximations. The filename and hash are also stored on `gameData` in `data/guide.json` and are not rendered. Recheck that file when the bundle filename or its hash changes.
 
 The page does not recommend builds. It does not fill gaps from regular Diablo II.
 
